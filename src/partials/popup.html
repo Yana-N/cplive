@@ -1,0 +1,67 @@
+<div class="popup" data-modal>
+  <div class="popup__content">
+    <button class="popup__close btn-reset">
+      <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.35355" y1="0.646447" x2="25.3536" y2="24.6464" stroke="#fff"/>
+        <line y1="-0.5" x2="33.9411" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25 1)" stroke="#fff"/>
+      </svg>
+    </button>
+    <div class="popup__header">
+      <h2 class="h2">Записаться на практику</h2>
+      <p><b>Скидка 10%</b> на составление утренней индивидуальной медитации</p>
+    </div>
+    <div class="popup__body">
+      <form class="popup__form form">
+        <div class="form__groups form__groups--vertical">
+          <div class="form__group">
+            <label for="name">Ваше имя</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ваше имя*"
+              data-validate-field="name"
+            />
+          </div>
+          <div class="form__group">
+            <label for="tel">Телефон</label>
+            <input
+              id="tel"
+              type="tel"
+              name="tel"
+              placeholder="Ваш телефон*"
+              data-validate-field="tel"
+            />
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Ваш email"
+              data-validate-field="email"
+            />
+          </div>
+          <div class="form__group">
+            <label for="promocode">Промокод</label>
+            <input
+              id="promocode"
+              type="text"
+              name="promocode"
+              placeholder="Промокод"
+              data-validate-field="promocode"
+            />
+          </div>
+          <div class="form__group">
+            <button class="btn-reset btn btn--white">Отправить заявку</button>
+          </div>
+        </div>
+        <p class="form__acceptance form__acceptance--center">
+          Нажимая на кнопку, Вы соглашаетесь с обработкой персональных данных
+        </p>
+        <p class="form__success">Сообщение успешно отправлено!</p>
+      </form>
+    </div>
+  </div>
+</div>

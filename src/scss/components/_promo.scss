@@ -1,0 +1,17 @@
+.promo {
+  background: $accent-grad;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__title,
+  &__subtitle {
+    max-width: rem(640);
+    color: $white;
+  }
+}

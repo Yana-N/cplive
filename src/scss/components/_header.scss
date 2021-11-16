@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+  z-index: 1000;
+  padding: rem(16) 0;
+  width: 100%;
+  box-shadow: 0 0 20px 0px #e7e7e78c;
+  background: $white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  @include mobile {
+    padding: rem(8) 0;
+  }
+}

@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: $font-family;
+  font-weight: 400;
+  color: $black;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding: rem(50) 0;
+
+  @include tablet {
+    padding: rem(45) 0;
+  }
+}
+
+.site-container {
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1230px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.animated {
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}

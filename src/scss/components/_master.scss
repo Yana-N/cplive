@@ -1,0 +1,57 @@
+.master {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(50);
+
+  &__avatar {
+    position: relative;
+    flex-grow: 1;
+    margin-right: rem(30);
+    min-width: rem(240);
+
+    @include tablet {
+      margin-top: rem(20);
+      margin-right: 0;
+    }
+  }
+
+  &__pic {
+    overflow: hidden;
+    border-radius: $border-radius;
+    padding: rem(6);
+    box-shadow: 0 8px 35px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+  }
+
+  &__descr {
+    font-size: rem(16);
+
+    .title {
+      margin-bottom: rem(10);
+      font-weight: 500;
+    }
+
+    .subtitle {
+      color: $grey200;
+    }
+
+    .text {
+      margin-top: rem(16);
+    }
+  }
+
+  @include tablet {
+    flex-direction: column-reverse;
+    margin-bottom: rem(60);
+
+    &:last-child {
+      margin-bottom: rem(30);
+    }
+  }
+}

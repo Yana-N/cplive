@@ -1,0 +1,39 @@
+.footer {
+  padding: rem(20);
+  background: $accent-grad;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    max-width: 90px;
+
+    img {
+    }
+  }
+
+  &__links {
+    a {
+      font-size: rem(14);
+      color: $white;
+    }
+
+    @include mobile {
+      margin: rem(20) 0;
+      text-align: center;
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    font-size: rem(14);
+    color: $white;
+  }
+}

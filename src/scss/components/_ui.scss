@@ -1,0 +1,58 @@
+.btn {
+  display: inline-block;
+  border-radius: $border-radius;
+  padding: rem(22) rem(30);
+  font-weight: 500;
+  font-size: rem(15);
+  line-height: 1.5;
+  color: $white;
+  background-color: transparent;
+  transition: $trans-hover;
+
+  @include tablet {
+    padding: rem(18) rem(26);
+  }
+
+  &--accent {
+    box-shadow: $box-shadow;
+    background-color: $accent100;
+
+    &:hover {
+      background-color: lighten($accent100, 5%);
+    }
+  }
+
+  &--white {
+    color: $black;
+    background-color: $white;
+
+    &:hover {
+      background-color: lighten($accent100, 5%);
+    }
+  }
+
+  &--video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: $box-shadow;
+  }
+
+  &--sm {
+    padding: rem(16);
+    width: rem(48);
+    height: rem(48);
+  }
+
+  &--md {
+    padding: rem(16);
+    width: rem(100);
+    height: rem(100);
+
+    svg {
+      width: 42px;
+      height: 42px;
+    }
+  }
+}

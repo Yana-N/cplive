@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+
+  &__item {
+    display: block;
+    margin-right: rem(15);
+    width: rem(36);
+    height: rem(36);
+    transition: $trans-hover;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
